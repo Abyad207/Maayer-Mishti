@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f1d7bd;
+  color: #333;
+}
+
+.navbar {
+  background: #f1d7bd;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e0c1a8;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links,
+.nav-links-mobile {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links-mobile {
+  flex-direction: column;
+  position: absolute;
+  background: #f1d7bd;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn-outline {
+  border: 2px solid #000;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+.hero {
+  background: url('https://i.imgur.com/FvQ3Dn4.jpeg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.btn {
+  background: #c91b5d;
+  color: white;
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.contact-wrapper {
+  padding: 3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.checkbox {
+  font-size: 0.9rem;
+}
