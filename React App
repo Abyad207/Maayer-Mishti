@@ -1,2 +1,7 @@
 npx create-react-app maayer-mishti
 cd maayer-mishti
+
+npm install react-icons
+
+npm start
+
